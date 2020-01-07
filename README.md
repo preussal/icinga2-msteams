@@ -1,5 +1,5 @@
-# nagios-msteams
-A Nagios plugin to send notifications to MS teams
+# icinga2-msteams
+A Icinga/Nagios plugin to send notifications to MS teams
 
 ## prerequisites
 
@@ -12,7 +12,7 @@ These perl modules need to be installed.
 ## usage
 
 `--webhook` is required option. 
-`--nagios_url` to add a link in the notification.
+`--ICINGAWEB2URL` to add a link in the notification.
 
 ```
 export NAGIOS_HOSTALIAS="hoge101" NAGIOS_SERVICEDESC="http" NAGIOS_SERVICESTATE="WARNING" NAGIOS_SERVICEOUTPUT="test output"
