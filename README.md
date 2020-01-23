@@ -23,7 +23,7 @@ These perl modules need to be installed.
 ## installation
 
 1. Place the script in /etc/icinga2/scripts/
-2.`chmod +x /etc/icinga2/scripts/teams-*-notification.pl`
+2. `chmod +x /etc/icinga2/scripts/teams-*-notification.pl`
 3. Configure commands or import Director-Basket_TeamsNotifications.json into Icings-director
 4. Add the complete Webhook URL (including https://) for Teams Channel as Pager into your contact.
 
