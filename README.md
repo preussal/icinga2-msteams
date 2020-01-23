@@ -1,5 +1,5 @@
 # icinga2-msteams
-A Icinga/Nagios plugin to send notifications to MS teams
+A Icinga2 plugin to send notifications to MS teams
 
 ## prerequisites
 
@@ -9,21 +9,23 @@ These perl modules need to be installed.
  - LWP::UserAgent
  - JSON
 
+## ToDo's
+  - Write complete howto
+  - Update Script --help command
+  - Cleanup Director basket json, as it's a clone from the default mail notification command (unnessesary parameters and wrong naming)
+
 ## usage
 
 `--webhook` is required option. 
 `--ICINGAWEB2URL` to add a link in the notification.
 
-```
-export NAGIOS_HOSTALIAS="hoge101" NAGIOS_SERVICEDESC="http" NAGIOS_SERVICESTATE="WARNING" NAGIOS_SERVICEOUTPUT="test output"
-./nagios-msteams.pl --webhook 'https://your incoming webhook url'
-```
 
 ## installation
 
-1. place the script in nagios plugin directory
-2. `chmod +x <path to Nagios plugin>/nagios-msteams.pl`
-3. configure commands, contacts
+1. place the script in /etc/icinga2/scripts/
+2. `chmod +x /etc/icinga2/scripts/teams-*-notification.pl`
+3. configure commands or import Director-Basket_TeamsNotifications.json into Icings-director
+4. Add the complete Webhook URL (including https://) for Teams Channel as Pager into your contact.
 
 
 # Reference
