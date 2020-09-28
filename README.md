@@ -7,6 +7,7 @@ These perl modules need to be installed.
 
  - HTTP::Request
  - LWP::UserAgent
+ - URI::Encode (Ubuntu/Debian liburi-encode-perl)
  - JSON
 
 ## ToDo's
