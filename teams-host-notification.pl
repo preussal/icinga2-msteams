@@ -31,7 +31,7 @@ my @sections;
 my @actions;
 my @targets;
 my $webhook;
-my $icingaweb2url = "https://monitoring.mydomane.com/icingaweb2";
+my $icingaweb2url;
 my $proxyUrl = '';
 my %color = ( 'OK' => '008000', 'WARNING' => 'ffff00', 'UNKNOWN' => '808080','CRITICAL' => 'ff0000',
               'UP' => '008000', 'DOWN' => 'ff0000', 'UNREACHABLE' => 'ff8700');
@@ -54,7 +54,7 @@ my $notificationcomment;
 #
 GetOptions (
 "p=s" => \$webhook,
-"ICINGAWEB2URL:s" => \$icingaweb2url,
+"i:s" => \$icingaweb2url,
 "d=s"  => \$longdatetime,
 "e:s"  => \$servicename,
 "l=s"  => \$hostname,
